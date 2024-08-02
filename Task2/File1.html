@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Delivery Application</h1>
+        <div class="grocery-list">
+            <h2>Available Groceries</h2>
+            <div class="item">
+                <span>Apples</span>
+                <span>$1.00 each</span>
+                <button onclick="addToCart('Apples', 1.00)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <span>Bananas</span>
+                <span>$0.50 each</span>
+                <button onclick="addToCart('Bananas', 0.50)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <span>Carrots</span>
+                <span>$0.30 each</span>
+                <button onclick="addToCart('Carrots', 0.30)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <div class="total">
+                <strong>Total: $<span id="totalAmount">0.00</span></strong>
+            </div>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
