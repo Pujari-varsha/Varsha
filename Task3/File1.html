@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course-list">
+                <div class="course" onclick="showCourseDetails('course1')">
+                    <h3>Introduction to JavaScript</h3>
+                    <p>Learn the basics of JavaScript, a powerful scripting language for web development.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails('course2')">
+                    <h3>HTML & CSS Fundamentals</h3>
+                    <p>Understand the core concepts of HTML and CSS to create well-structured and styled web pages.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails('course3')">
+                    <h3>Responsive Web Design</h3>
+                    <p>Master techniques for designing web pages that look great on all devices and screen sizes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We offer a range of online courses designed to help you learn and grow in the field of web development. Our platform provides easy-to-follow lessons, practical exercises, and expert guidance.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please email us at <a href="mailto:support@elearning.com">support@elearning.com</a>.</p>
+        </section>
+    </main>
+
+    <div id="courseDetails" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCourseDetails()">&times;</span>
+            <h2 id="courseTitle">Course Title</h2>
+            <p id="courseDescription">Course description goes here.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
